@@ -1,9 +1,9 @@
 const logger = require('./logger')
-const morgan = require('morgan')
+//const morgan = require('morgan')
 
-morgan.token('log-body', function (request, response) {
+/* morgan.token('log-body', function (request, response) {
   return JSON.stringify(request.body)}
-)
+) */
 
 const requestLogger = (request, response, next) => {
   logger.info('Method:', request.method)
@@ -41,5 +41,5 @@ module.exports = {
   requestLogger,
   unknownEndpoint,
   errorHandler,
-  tokenExtractor
+  tokenExtractor,
 }

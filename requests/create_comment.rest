@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/blogs/5f889e0e131c1e2fb366de3a/comments
+
+Content-Type: application/json
+//Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpkZm90byIsImlkIjoiNWY1Nzg2ZGZkMDA5Mzc5ODA2ZmVkOGE2IiwiaWF0IjoxNTk5NTcyMjQ0fQ.zlu6YFHLQKxM7Ue1Uiny2MZ6N1K18PPb3Cl1oNAWzTM
+
+{
+    "comment": "Honing in on better logs 3"
+}

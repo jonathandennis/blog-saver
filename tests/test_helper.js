@@ -1,0 +1,41 @@
+const Blog = require('../models/blog')
+const User = require('../models/user')
+
+const initialBlogs = [
+  {
+    title: 'React patterns',
+    author: 'Michael Chan',
+    url: 'https://reactpatterns.com/',
+    likes: 7,
+    id: '5f202454aa1bcb3946a58e4f',
+  },
+  {
+    title: 'Go To Statement Considered Harmful',
+    author: 'Edsger W. Dijkstra',
+    url: 'http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html',
+    likes: 5,
+    id: '5f20249805551f39b2e8a622',
+  },
+]
+
+//   const nonExistingId = async () => {
+//     const note = new Note({ content: 'willremovethissoon' })
+//     await note.save()
+//     await note.remove()
+
+//     return note._id.toString()
+//   }
+
+const blogsInDb = async () => {
+  const blogs = await Blog.find({})
+  return blogs.map(blog => blog.toJSON())
+}
+
+const usersInDb = async () => {
+  const users = await User.find({})
+  return users.map(u => u.toJSON())
+}
+
+module.exports = {
+  initialBlogs, blogsInDb, usersInDb
+}

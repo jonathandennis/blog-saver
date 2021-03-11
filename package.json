@@ -4,7 +4,7 @@
   "description": "blog saver app is a repository for continued learning",
   "main": "index.js",
   "scripts": {
-    "start": "serve -s build",
+    "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
     "lint": "eslint .",
     "test": "NODE_ENV=test jest --verbose --runInBand",

@@ -4,7 +4,7 @@
   "description": "blog saver app is a repository for continued learning",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node index.js",
+    "start": "serve -s build",
     "dev": "NODE_ENV=development nodemon index.js",
     "lint": "eslint .",
     "test": "NODE_ENV=test jest --verbose --runInBand",
@@ -28,7 +28,8 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.15",
-    "mongoose-unique-validator": "^2.0.3"
+    "mongoose-unique-validator": "^2.0.3",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "eslint": "^7.21.0",

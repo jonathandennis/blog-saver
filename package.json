@@ -43,6 +43,5 @@
   },
   "directories": {
     "test": "tests"
-  },
-  "proxy": "http://localhost:3001"
+  }
 }
